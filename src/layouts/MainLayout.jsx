@@ -5,7 +5,7 @@ function MainLayout(){
     return <>
         <Header/>
         <Outlet/>
-        
+        <br />
     </>
 }
 

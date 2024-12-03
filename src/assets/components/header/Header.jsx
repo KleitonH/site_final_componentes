@@ -1,19 +1,16 @@
-import { NavLink } from "react-router-dom";
+import StoreIcon from '@mui/icons-material/Store';
+import Navegacao from "../navigation/Navegacao";
 
 function Header(){
     return <>
         <header className="container">
             <div className="logo">
-                inserir logo
+                <h1>CK Storage</h1>
+                <StoreIcon/>
             </div>
-            <nav className="navigation">
-                <ul>
-                <NavLink className={({isActive}) => isActive ? "active" : ""}  to={"/home"}>Home</NavLink>
-                    <NavLink to={"/produtos"}>Produtos</NavLink>
-                    <NavLink to={"/cadastrar"}>Cadastrar Produto</NavLink>
-                </ul>
-            </nav>
         </header>
+        <br />
+        <Navegacao/>
     </>
 }
 
