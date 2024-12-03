@@ -7,6 +7,7 @@ import '@fontsource/roboto/700.css';
 import MainLayout from './layouts/MainLayout';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage';
+import CadastroPage from './pages/CadastroPage';
 
 const App = () => {
   return (
@@ -15,6 +16,9 @@ const App = () => {
       <Route path='/' element={<MainLayout/>}>
         <Route index/>
         <Route path='/home' element={<HomePage/>}/>
+        <Route path='/cadastrar' element={<CadastroPage/>}/>
+
+        <Route path='*' element={"Página não encontrada"}/>
 
       </Route>
     </Routes>

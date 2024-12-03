@@ -6,7 +6,7 @@ function Header(){
             <div className="logo">
                 inserir logo
             </div>
-            <nav className="navigation" style={'display: flex'}>
+            <nav className="navigation">
                 <ul>
                 <NavLink className={({isActive}) => isActive ? "active" : ""}  to={"/home"}>Home</NavLink>
                     <NavLink to={"/produtos"}>Produtos</NavLink>
