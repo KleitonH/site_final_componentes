@@ -1,6 +1,6 @@
 function HomePage(){
     return <>
-        <h1>Início</h1>
+        <h1>Bem-vindo(a) ao nosso Cadastrador de Produtos!</h1>
     </>
 }
 
