@@ -10,7 +10,12 @@ function Header(){
             </div>
         </header>
         <br />
+        <br />
+        <br />
         <Navegacao/>
+        <br />
+        <br />
+        <br />
     </>
 }
 
