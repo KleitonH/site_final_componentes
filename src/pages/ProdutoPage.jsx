@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function ProdutoPage(){
+
+    const navegacao = useNavigate()
 
     const [produtos, setProdutos] = useState([])
 
@@ -18,10 +21,10 @@ function ProdutoPage(){
     return(
         <div style={{display:"flex", flexWrap:"wrap", gap:"20px", justifyContent:"space-around"}}>
             {produtos.map(item => {
-                return <div>
+                return <div onClick={() => {
+                    navegacao(`/produtos/${item.id}`)
+                }} style={{border: "solid"}}>
                     <h2>{item.descricao}</h2>
-                    <h3>{item.quantidade}</h3>
-                    <h3>{item.preco}</h3>
                     <img src={item.imagem} alt="imagem produto" />
                 </div>
             })}
