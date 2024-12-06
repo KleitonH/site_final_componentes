@@ -1,12 +1,18 @@
 {
-    "produtos": [
-        {
-            "id": "1",
-            "descricao": "Produto para teste do db.json",
-            "quantidade": 20,
-            "preco": 12.99,
-            "imagem": "https://picsum.photos/200"
-          }
-       
-    ]
+  "produtos": [
+    {
+      "id": "5a4e",
+      "descricao": "Bolacha",
+      "quantidade": "15",
+      "preco": "12",
+      "imagem": "https://picsum.photos/200"
+    },
+    {
+      "id": "3ab1",
+      "descricao": "Bolacha",
+      "quantidade": "48",
+      "preco": "17",
+      "imagem": "https://picsum.photos/200"
+    }
+  ]
 }

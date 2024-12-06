@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage';
 import CadastroPage from './pages/CadastroPage';
 import ProdutoPage from './pages/ProdutoPage';
+import ProdutoDetalhe from './pages/ProdutoDetalhe';
 
 const App = () => {
   return (
@@ -18,8 +19,8 @@ const App = () => {
         <Route index/>
         <Route path='/home' element={<HomePage/>}/>
         <Route path='/cadastrar' element={<CadastroPage/>}/>
-        <Route path='produtos' element={<ProdutoPage/>}/>
-
+        <Route path='/produtos' element={<ProdutoPage/>}/>
+        <Route path='/produtos/:id' element={<ProdutoDetalhe />} />
         <Route path='*' element={"Página não encontrada"}/>
 
       </Route>
