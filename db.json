@@ -1,0 +1,12 @@
+{
+    "produtos": [
+        {
+            "id": "1",
+            "descricao": "Produto para teste do db.json",
+            "quantidade": 20,
+            "preco": 12.99,
+            "imagem": "https://picsum.photos/200"
+          }
+       
+    ]
+}
